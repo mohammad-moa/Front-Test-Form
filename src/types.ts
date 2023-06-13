@@ -32,3 +32,29 @@ export type SelectProps = {
   onChange: (e: SelectChangeEvent) => void;
   children: React.ReactNode;
 };
+
+// Interface Input Info Form Component
+export interface IInputInfo {
+  email: {
+    value: string;
+    isError: boolean;
+  };
+  zipCode: {
+    value: string;
+    isError: boolean;
+  };
+}
+
+// Interface Select Info Form Component
+export interface ISelectInfo {
+  provinces: string;
+  cities: string;
+}
+
+// Interface Cities
+export interface ICities {
+  id: number;
+  name: string;
+  slug: string;
+  province_id: number;
+}
